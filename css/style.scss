@@ -115,6 +115,8 @@ body {
     }
 }
 .info-container {
+    position: relative;
+    z-index: 1;
     padding: 10px;
     display: block;
     line-height: 25px;
@@ -122,6 +124,7 @@ body {
     width: 100%;
     text-align: center;
     margin-bottom: 1em;
+     
     h2 {
         font-size: 100px;
         margin: 0;
@@ -133,7 +136,22 @@ body {
         margin: 0;
         margin-bottom: 1em;
     }
+    
 }
+.spacer {
+    margin-bottom: .5em;
+}
+
+#fitbg {
+    margin-top: 55px;
+        height: 550px;
+        width: 100%;
+	   background-repeat: no-repeat;
+	   background-position: 40% 65%;
+       background-image: url(../img/fitbg.png);
+        background-size: cover;
+      
+    }
 .quote {
     height: auto;
     text-align: center;

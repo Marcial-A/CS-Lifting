@@ -88,6 +88,8 @@ body {
     font-family: 'Acme', sans-serif; }
 
 .info-container {
+  position: relative;
+  z-index: 1;
   padding: 10px;
   display: block;
   line-height: 25px;
@@ -103,6 +105,18 @@ body {
   .info-container p {
     margin: 0;
     margin-bottom: 1em; }
+
+.spacer {
+  margin-bottom: .5em; }
+
+#fitbg {
+  margin-top: 55px;
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 40% 65%;
+  background-image: url(../img/fitbg.png);
+  background-size: cover; }
 
 .quote {
   height: auto;
