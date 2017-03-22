@@ -1,3 +1,11 @@
+#logo {
+  margin-top: -10px;
+  margin-left: 15px;
+  height: 35px; }
+
+.navbar-brand {
+  padding: 10px; }
+
 .nav > li > a {
   padding: 10px; }
 
@@ -11,6 +19,7 @@
   background-color: crimson; }
 
 #nav-collapse {
+  margin-top: 10px;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .navbar-collapse {
@@ -37,7 +46,7 @@
   border-color: transparent;
   border: none; }
   .navbar #brandname {
-    padding-top: 20px;
+    width: 100%;
     font-family: 'Acme', sans-serif;
     color: white; }
   .navbar #fb {
