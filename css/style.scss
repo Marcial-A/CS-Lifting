@@ -1,8 +1,27 @@
+.nav>li>a {
+    padding: 10px;
+}
+#toggles:hover {
+    background-color:transparent;
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color:crimson;
 }
+#nav-collapse {
+    background-color: rgba(0, 0, 0, .8);
+}
+.navbar-collapse {
+    border: 0;
+}
+.navbar-toggle {
+    
+}
 #nav {
-    display: inline;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+   
+    display: block;
     li a{
     font-family: 'Acme', sans-serif;
     color: white; 
@@ -17,16 +36,15 @@
     }
 }
 .navbar {
-    width: 50%;
-   position: absolute;
-    z-index: 1;
-    background: rgba(0, 0, 0, .8);
+    background-color: transparent;
+   background: transparent;
+   border-color: transparent;
     border: none;
-   
     ul li a {
         
     }
     #brandname{
+        padding-top: 20px;
         font-family: 'Acme', sans-serif;
         color: white;
     }
@@ -84,7 +102,7 @@ body {
 
 .carousel-caption {
     position: absolute;
-    bottom: 380px;
+    bottom: 20%;
     h1 {
         font-family: 'Acme', sans-serif;
     }
@@ -94,18 +112,19 @@ body {
     }
 }
 .info-container {
+    padding: 10px;
     display: block;
     line-height: 25px;
-    height: 400px;
-    width: 70%;
-    padding-left: 100px;
+    height: auto;
+    width: 100%;
+    text-align: center;
     margin-bottom: 1em;
     h2 {
         font-size: 100px;
         margin: 0;
         font-size: 100px;
         margin-bottom: .3em;
-        margin-top: 1em;
+        
     }
     p {
         margin: 0;
@@ -113,9 +132,9 @@ body {
     }
 }
 .quote {
-    
+    height: auto;
     text-align: center;
-    height: 750px;
+    
     color: dimgray;
     
     font-family: 'Just Another Hand', cursive;
@@ -133,21 +152,30 @@ body {
        
     }
 }
+#transform{
+   
 
-.vlog {
+    height: auto;
     width: 100%;
+}
+.vlog {
+    max-width: 100%;
     
-    max-height: 550px;
+    height: auto;
     .panel-body {
-        height: auto;
-        max-height: 570px;
+      
+    
     }
-    p {
-        width: 500px;
-        line-height: 30px;
-    }
+    
+    
     
 }
+#ytvid {
+        max-width: 100%;
+    h2 {
+        margin-top: 10px;
+    }
+    }
 #foot {
     margin: 0;
     width: 100%;

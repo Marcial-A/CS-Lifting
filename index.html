@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="CS Lifting - The beginning of a better you. Your source for motivation, fitness advice and entertainment.">
+    <meta name="author" content="Marcial Araracap">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Iron Alliance</title>
+    <title>CS Lifting</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
       <link href="css/full-slider.css" rel="stylesheet">
@@ -33,22 +33,25 @@
 ================================================== -->
   <body>
       <div class="scroll" data-section-name="home" >
-    <div class="navbar-wrapper" >
+    <div id="nav" class="navbar-wrapper" >
       <div class="container">
 
-        <nav id="nav" class="navbar navbar-default">
+        <nav class="navbar navbar-default">
           <div class="container">
             <div class="navbar-header">
-              
+               <button id="toggles" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
               <a id="brandname" class="navbar-brand" href="#">CS Lifting</a>
             </div>
+            <div id="nav-collapse" class="collapse navbar-collapse">
             <div id="navbar">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav nav-pills">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#equipment">Learn Equipment</a></li>
                 <li><a href="#exercises">Exercises</a></li>
-                <li><a href="#fitness">Fitness Tools</a></li>
                 <li><a href="#vlogs">Vlogs</a></li>
                 <li><a id="fb" class="btn btn-social-icon btn-facebook" href="#fb"><span  class="fa fa-facebook-official"></span></a></li>
                 <li><a id="ig" class="fb btn btn-social-icon btn-instagram" href="#fb"><span class="fa fa-instagram"></span></a></li>
@@ -96,6 +99,7 @@
                     <h2>Caption 3</h2>
                 </div>
             </div>
+            <a href=".info">Learn More</a>
         </div>
 
         <!-- Controls -->
@@ -140,20 +144,21 @@
                 <div class="quote">
                     <h2>It's never too late to become what you might have been.</h2>
                     <h3><img id="george" src="img/georgeEliot.jpg">- George Eliot</h3>
-                    <img src="img/transformation.png">
+                    
                 </div>
+                <img id="transform" src="img/transformation.png">
             </div>
       </div>
     <div class="scroll vlog container" data-section-name="vlogs">
             <div class="panel panel-default">
-                <div class="panel-body">
+                <div id="ytvid" class="panel-body">
                 <h2>Watch our latest Vlog:</h2>
                 <p>Description: Having issues growing your biceps? Watch our newest Vlog regarding stimulating growth, how to increase size and common mistakes you may be making.</p>
-                <div id="ytvid"><iframe src="https://www.youtube.com/embed/r34L4tgx6-g?ecver=2" width="480" height="360" frameborder="0"  allowfullscreen></iframe></div>
+                <iframe src="https://www.youtube.com/embed/r34L4tgx6-g?ecver=2" frameborder="0"  allowfullscreen></iframe>
             </div>
          
         </div>
-      </div>
+      
 
       <footer id="foot">
 <ul id="sitemap">
@@ -171,9 +176,9 @@
     <li>Facebook</li>
    
 </ul>
-     <p id="copyrights">2017 Iron Alliance</p>
+     <p id="copyrights">2017 CS Lifting</p>
 </footer>
-
+</div>
     <!-- /.container -->
 
     <!-- jQuery -->
