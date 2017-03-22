@@ -1,6 +1,9 @@
 .nav > li > a {
   padding: 10px; }
 
+#toggles {
+  margin-top: 5px; }
+
 #toggles:hover {
   background-color: transparent; }
 
