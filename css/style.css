@@ -97,6 +97,27 @@ body {
     font-size: 18px;
     font-family: 'Acme', sans-serif; }
 
+#down {
+  position: absolute;
+  bottom: 80px;
+  left: 49%;
+  border-radius: 150px; }
+
+#down {
+  animation-duration: 3s;
+  animation-name: moveDown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes moveDown {
+  100% {
+    bottom: 100px; }
+  50% {
+    bottom: 110px; }
+  0% {
+    bottom: 85px; }
+  50% {
+    bottom: 110px; } }
 .info-container {
   position: relative;
   z-index: 1;
@@ -131,6 +152,15 @@ body {
 
   #fitbg img {
     display: none; } }
+#fitbg-container p {
+  position: relative;
+  z-index: 2;
+  bottom: 210px;
+  right: 30px;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-size: 25px; }
+
 #fitbg {
   margin-top: 55px;
   height: 300px;
@@ -140,6 +170,24 @@ body {
   background-image: url(../img/fitbg.png);
   background-size: cover; }
 
+#fitbg-container p {
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+  animation-duration: 2s;
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+  animation-duration: 2s;
+  animation-name: slides; }
+
+@keyframes slides {
+  100% {
+    margin-right: 0%; }
+  40% {
+    margin-right: 60%; }
+  20% {
+    margin-right: 100%; }
+  0% {
+    margin-right: 200%; } }
 .quote {
   height: auto;
   text-align: center;
