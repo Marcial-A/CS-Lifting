@@ -88,6 +88,7 @@ body {
   -o-background-size: cover; }
 
 .carousel-caption {
+  line-height: 40px;
   position: absolute;
   bottom: 20%; }
   .carousel-caption h1 {
@@ -121,12 +122,21 @@ body {
 .spacer {
   margin-bottom: .5em; }
 
+@media screen and (max-width: 380px) {
+  #fitbg {
+    max-height: 190px;
+    background-position: 40% 60%;
+    background-image: url(../img/fitbgmob.png);
+    background-size: cover; }
+
+  #fitbg img {
+    display: none; } }
 #fitbg {
   margin-top: 55px;
-  height: 550px;
+  height: 300px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: 40% 65%;
+  background-position: 40% 64%;
   background-image: url(../img/fitbg.png);
   background-size: cover; }
 
@@ -147,7 +157,7 @@ body {
 
 #transform {
   margin-top: 50px;
-  max-height: 700px;
+  max-height: 600px;
   height: auto;
   width: 100%; }
 
@@ -175,7 +185,7 @@ body {
     height: auto; }
   #content h2, #content p {
     position: relative;
-    top: 360px;
+    top: 260px;
     background-color: rgba(0, 0, 0, 0.9); }
 
 #ytvid {
@@ -183,7 +193,7 @@ body {
   max-width: 100%;
   height: auto;
   background-color: black;
-  min-height: 500px; }
+  min-height: 400px; }
   #ytvid p {
     max-width: 500px;
     line-height: 30px;
@@ -191,10 +201,11 @@ body {
     background-color: rgba(0, 0, 0, 0.9); }
   #ytvid iframe {
     float: left;
-    min-height: 500px;
+    min-height: 400px;
     max-width: 500px;
     width: 100%;
-    clear: right; }
+    clear: right;
+    margin-bottom: 15px; }
 
 #foot {
   color: white;
