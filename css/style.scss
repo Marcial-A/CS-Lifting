@@ -126,9 +126,10 @@ span.icon-next {
     padding-bottom: 35px;
 }
 .carousel-caption {
+    background-color: rgba(0,0,0,.5);
     line-height: 40px;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     h1 {
         font-family: 'Acme', sans-serif;
     }
