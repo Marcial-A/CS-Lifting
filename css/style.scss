@@ -156,17 +156,19 @@ span.icon-next {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
+#myCarousel {
+    margin-bottom: 10%;
+}
 .info-container {
     position: relative;
     z-index: 1;
     padding: 25px;
     display: block;
     line-height: 25px;
-    height: auto;
+   
     width: 100%;
     text-align: center;
-    margin-bottom: 1em;
+   
     
     a {
         text-decoration: none;
@@ -248,7 +250,15 @@ span.icon-next {
     
     
 }
+@media (max-width: 360px) {
+    .quote h2{
+        
+        margin-top: 85%;
+    }
+}
 .quote {
+    margin-top: 5%;
+
     height: auto;
     text-align: center;
     
@@ -271,7 +281,7 @@ span.icon-next {
 }
 
 #transform{
-    clear: both;
+   
    margin-top: 50px;
     max-height: 600px;
     height: auto;
@@ -280,16 +290,10 @@ span.icon-next {
 .vlog {
     width: 100%;
     color: white;
-    background-color: black;
+
     font-family: 'Acme', sans-serif;
     height: auto;
-    .panel-body {
-      border: none;
-    
-    }
-    
-    
-    
+
 }
 #content {
     height: auto;
