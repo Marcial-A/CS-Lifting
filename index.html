@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<!-- Meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="CS Lifting - The beginning of a better you. Your source for motivation, fitness advice and entertainment.">
     <meta name="author" content="Marcial Araracap">
-    <link rel="icon" href="./img/favicon.ico">
     <meta property="og:image" content="./img/logo.jpeg">
-
-    <title>CS Lifting</title>
+<!-- Meta tags -->
+    <link rel="icon" href="./img/favicon.ico">
+<!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
-      <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Baloo+Bhaina" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link href="css/carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-      <script>
-				$(function() {
-					$.scrollify({
-						section : ".section-class-name",
-						sectionName : "section-name"
-					});
-				});
-			</script>
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+<!-- /CSS -->
+    <script src="js/jquery.js"></script>
+      <title>CS Lifting</title>
+      
     
   </head>
 <!-- NAVBAR
 ================================================== -->
+    
   <body>
+      
       <div class="scroll" data-section-name="home" >
-    <div id="nav" class="navbar-wrapper" >
-      <div class="container">
-
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-               <button id="toggles" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-              <a id="brandname" class="navbar-brand" href="#"><img id="logo" src="img/logo.png"> Lifting</a>
+          <div id="nav" class="navbar-wrapper" >
+              <div class="container">
+                <nav class="navbar navbar-default"> 
+                <div class="navbar-header">
+                    <button id="toggles" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brandname" class="navbar-brand" href="#"><img id="logo" src="img/logo.png"> Lifting</a>
+                </div>
+                <div id="nav-collapse" class="collapse navbar-collapse">
+                <div id="navbar">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#equipment">Learn Equipment</a></li>
+                        <li><a href="#exercises">Exercises</a></li>
+                        <li><a href="#vlogs">Vlogs</a></li>
+                        <li><a id="fb" class="btn btn-social-icon btn-facebook" href="#fb">
+                        <span class="fa fa-facebook-official"></span></a></li>
+                        <li><a id="ig" class="fb btn btn-social-icon btn-instagram" href="#fb">
+                        <span class="fa fa-instagram"></span></a></li>
+                        <li><a id="yt" class="btn btn-social-icon btn-youtube-play" href="#fb">
+                        <span class="fa fa-youtube-play"></span></a></li>
+                    </ul>
+                </div>
+                </div>
+                </nav>
             </div>
-            <div id="nav-collapse" class="collapse navbar-collapse">
-            <div id="navbar">
-              <ul class="nav navbar-nav nav-pills">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#equipment">Learn Equipment</a></li>
-                <li><a href="#exercises">Exercises</a></li>
-                <li><a href="#vlogs">Vlogs</a></li>
-                <li><a id="fb" class="btn btn-social-icon btn-facebook" href="#fb"><span  class="fa fa-facebook-official"></span></a></li>
-                <li><a id="ig" class="fb btn btn-social-icon btn-instagram" href="#fb"><span class="fa fa-instagram"></span></a></li>
-                <li><a id="yt" class="btn btn-social-icon btn-youtube-play" href="#fb"><span class="fa fa-youtube-play"></span></a></li>
-                
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel"  class="carousel slide">
+        </div>
+    <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -79,7 +70,7 @@
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
+                <!-- Set the first background image using inline CSS below -->
                 <div class="fill" style="background-image:url('./img/main.png');"></div>
                 <div class="carousel-caption">
                     <h2>CantStop Lifting</h2>
@@ -87,7 +78,7 @@
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
+                <!-- Set the second background image using inline CSS below -->
                 <div class="fill" style="background-image:url('./img/main.png');"></div>
                 <div class="carousel-caption">
                     <h2>Let's make some progress</h2>
@@ -95,7 +86,7 @@
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
+                <!-- Set the third background image using inline CSS below -->
                 <div class="fill" style="background-image:url('./img/main.png');"></div>
                 <div class="carousel-caption">
                     <h2>Be a part of our awesome team!</h2>
@@ -103,74 +94,65 @@
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-            <a href="#info"><img id="down" src="img/arrowDown.png"></a>
-
-    </header>
-      </div>
-    <!-- Page Content -->
-    <div class="scroll info-container container" data-section-name="info">
+           
+        <div class="info-container container">
             <div class="info row">
                 <div class="col-md-4">
                     <h2 class="fa fa-book"></h2>
                     <h3>Information</h3>
                     <p>
                         Not sure where to start? Check out our <a href="#exercises">Exercises</a> and <a href="#equipment">Learn Equipment</a> section for useful information to guide you to your best self. Our knowledgeable coaches and trainers will show you what everything is so it's not too intimidating when you are working it harder than Rihanna at the gym.
-                </p>
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <h2 class="fa fa-television"></h2>
                     <h3>Entertainment</h3>
                     <p>
                         We know content without humor can be dull. That's why we're proud to show off our <a href="#vlog">Vlogs</a>. We enjoy a good laugh just as much as you do! Just don't laugh too hard, we don't want to be held accountable for laughter lasting longer than an hour. Okay, maybe just a little.
-                </p>
+                    </p>
                 </div>
-                <div class="spacer col-md-4">
+                <div class="col-md-4">
                     <h2 class="fa fa-users"></h2>
                     <h3>Motivation</h3>
                     <p>
                     Life can be pretty hectic with busy schedules, and tiring work hours. We're here to keep your mindset positive and upbeat. Don't wait until next summer to show off-- start now and think about how amazing you will look, it just takes one step. Let's start!
-                </p>
+                    </p>
                 </div>
                 
+            </div>
         </div>
-        <div id="fitbg-container">
-        <h2 id="fitbg"></h2>
-        <p id="first">Are you ready</p>
-        <p id="second">to begin your</p>
-        <p id="third">fitness journey?</p>
+    </header>   
       </div>
-          </div>
+      
+    <!-- Page Content -->
+    
+      
+          
         <div class="scroll container" data-section-name="quotes">
             <div class="row">
                 <div class="quote">
                     <h2>It's never too late to become what you might have been.</h2>
                     <h3><img id="george" src="img/georgeEliot.jpg">- George Eliot</h3>
-                    
                 </div>
-                <img id="transform" src="img/transformation.png">
+                <img id="transform" src="img/belly-2473_960_720.jpg">
             </div>
       </div>
     <div class="scroll vlog container" data-section-name="vlogs">
-            <div >
-                <div id="ytvid" class="panel-body">
+        <div>
+        <div id="ytvid" >
                 <iframe src="https://www.youtube.com/embed/r34L4tgx6-g?ecver=2?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0"  allowfullscreen></iframe>
                 <div id="content">
-                <h2>Watch our latest Vlog:</h2>
-                <p>Description: Having issues growing your biceps? Watch our newest Vlog regarding stimulating growth, how to increase size and common mistakes you may be making.</p>
+                    <h2>Watch our latest Vlog:</h2>
+                    <p>Description: Having issues growing your biceps? Watch our newest Vlog regarding stimulating growth, how to increase size and common mistakes you may be making.</p>
                 </div>
-                </div>
-                
             </div>
-            
-
+        </div>
       <footer id="foot">
 <ul id="sitemap">
     <li>Home</li>
@@ -184,16 +166,16 @@
     <li>Business Inquiries: Business@gmail.com</li>
     <li><a id="yt" class="btn btn-social-icon btn-youtube-play" href="#fb"><span class="fa fa-youtube-play"></span></a></li>
     <li><a id="ig" class="fb btn btn-social-icon btn-instagram" href="#fb"><span class="fa fa-instagram"></span></a></li>
-    <li><a id="fb" class="btn btn-social-icon btn-facebook" href="#fb"><span  class="fa fa-facebook-official"></span></a></li>
+    <li><a id="fb" class="btn btn-social-icon btn-facebook" href="#fb"><span class="fa fa-facebook-official"></span></a></li>
    
 </ul>
      <p id="copyrights">2017 CS Lifting</p>
 </footer>
 </div>
-    <!-- /.container -->
+    <!-- .container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

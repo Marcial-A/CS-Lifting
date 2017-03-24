@@ -65,27 +65,39 @@
     color: #bb0000;
     background-color: white; }
 
-html,
-body {
-  height: 100%; }
-
-.carousel,
-.item,
-.active {
-  height: 100%; }
-
-.carousel-inner {
-  height: 100%; }
-
 /* Background images are set within the HTML using inline CSS, not here */
 .fill {
   width: 100%;
   height: 100%;
-  background-position: center;
+  background-position: 20% 35%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+
+.carousel control {
+  height: 22%; }
+
+span.icon-prev {
+  height: 64px;
+  width: 55px;
+  border-style: solid;
+  border-color: white;
+  margin-bottom: 10px;
+  padding-bottom: 35px; }
+
+.icon-prev {
+  width: 45px;
+  height: 60px;
+  text-align: center; }
+
+span.icon-next {
+  eight: 64px;
+  width: 55px;
+  border-style: solid;
+  border-color: white;
+  margin-bottom: 10px;
+  padding-bottom: 35px; }
 
 .carousel-caption {
   line-height: 40px;
@@ -97,31 +109,30 @@ body {
     font-size: 18px;
     font-family: 'Acme', sans-serif; }
 
+@keyframes moveDown {
+  0% {
+    bottom: 48.5%; }
+  25% {
+    bottom: 49%; }
+  50% {
+    bottom: 53%; }
+  75% {
+    bottom: 55%; }
+  100% {
+    bottom: 60%; } }
 #down {
   position: absolute;
-  bottom: 80px;
-  left: 49%;
-  border-radius: 150px; }
-
-#down {
-  animation-duration: 3s;
+  top: 48.5%;
+  left: 48.5%;
+  animation-duration: 2s;
   animation-name: moveDown;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
-@keyframes moveDown {
-  100% {
-    bottom: 100px; }
-  50% {
-    bottom: 110px; }
-  0% {
-    bottom: 85px; }
-  50% {
-    bottom: 110px; } }
 .info-container {
   position: relative;
   z-index: 1;
-  padding: 10px;
+  padding: 25px;
   display: block;
   line-height: 25px;
   height: auto;
@@ -131,17 +142,19 @@ body {
   .info-container a {
     text-decoration: none; }
   .info-container h2 {
+    color: gray;
     font-size: 100px;
     margin: 0;
     font-size: 100px;
     margin-bottom: .3em; }
+  .info-container .info > .col-md-4 > h2:hover {
+    position: relative;
+    color: orangered;
+    bottom: 5px; }
   .info-container p {
     margin: 0;
     margin-bottom: 1em;
     padding: 5px; }
-
-.spacer {
-  margin-bottom: .5em; }
 
 @media screen and (max-width: 380px) {
   #fitbg {
@@ -155,7 +168,7 @@ body {
 #fitbg-container p {
   position: relative;
   z-index: 2;
-  bottom: 210px;
+  bottom: 810px;
   right: 30px;
   color: white;
   font-family: 'Acme', sans-serif;
@@ -204,6 +217,7 @@ body {
     width: 100px; }
 
 #transform {
+  clear: both;
   margin-top: 50px;
   max-height: 600px;
   height: auto;
@@ -237,11 +251,12 @@ body {
     background-color: rgba(0, 0, 0, 0.9); }
 
 #ytvid {
+  text-align: center;
   padding: 15px;
   max-width: 100%;
   height: auto;
   background-color: black;
-  min-height: 400px; }
+  min-height: 500px; }
   #ytvid p {
     max-width: 500px;
     line-height: 30px;
@@ -257,6 +272,7 @@ body {
 
 #foot {
   color: white;
+  height: 100%;
   margin: 0;
   width: 100%;
   background-image: url(../img/footer.png);
