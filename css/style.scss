@@ -19,6 +19,7 @@
     background-color:crimson;
 }
 #nav-collapse {
+   
     margin-top: 10px;
     background-color: rgba(0, 0, 0, .8);
 }
@@ -26,6 +27,14 @@
     border: 0;
 }
 .navbar-toggle {
+    
+}
+@media (max-width: 360px){
+    .navbar-collapse {
+        position: absolute;
+        top: 30%;
+    }
+    
     
 }
 #nav {
