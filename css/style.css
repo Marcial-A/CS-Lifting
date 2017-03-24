@@ -130,9 +130,6 @@ span.icon-next {
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
-#myCarousel {
-  margin-bottom: 10%; }
-
 .info-container {
   position: relative;
   z-index: 1;
