@@ -369,12 +369,26 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
     background-image: url(../img/footer.png);
     background-size: cover;
 }
-#sitemap {
-    text-align: center;
-   
-    display: inline;
-    list-style: none;
-    
+.sitemap {
+	list-style-type: none;
+	ul {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		li {
+			float: left;
+			
+			a {
+                text-align: center;
+				display: block;
+				padding: 15px;
+				color: white;
+				text-decoration: none;
+                text-decoration-style: none;
+				
+			}
+			}
+	}
 }
 #footer-info {
     text-align: center;
@@ -387,3 +401,29 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
     clear: both;
     text-align: center;
 }
+#equipment-head {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../img/barbell.jpg);
+    background-size: cover;
+    background-position: 70% 30%;
+   
+    
+}
+#equipment-container {
+    
+    
+    padding: 20px;
+     p {
+        max-width: 350px;
+    }
+    #barbell {
+        width: 300px;
+    }
+}
+#equipment-wrapper {
+         float: left;
+        clear: left;
+    }

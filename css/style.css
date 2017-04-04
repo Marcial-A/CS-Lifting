@@ -286,10 +286,21 @@ span.icon-next {
   background-image: url(../img/footer.png);
   background-size: cover; }
 
-#sitemap {
-  text-align: center;
-  display: inline;
-  list-style: none; }
+.sitemap {
+  list-style-type: none; }
+  .sitemap ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    .sitemap ul li {
+      float: left; }
+      .sitemap ul li a {
+        text-align: center;
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        text-decoration-style: none; }
 
 #footer-info {
   text-align: center;
@@ -299,5 +310,25 @@ span.icon-next {
 #copyrights {
   clear: both;
   text-align: center; }
+
+#equipment-head {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+  background-image: url(../img/barbell.jpg);
+  background-size: cover;
+  background-position: 70% 30%; }
+
+#equipment-container {
+  padding: 20px; }
+  #equipment-container p {
+    max-width: 350px; }
+  #equipment-container #barbell {
+    width: 300px; }
+
+#equipment-wrapper {
+  float: left;
+  clear: left; }
 
 /*# sourceMappingURL=style.css.map */
