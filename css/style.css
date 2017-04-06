@@ -83,7 +83,7 @@
 .fill {
   width: 100%;
   height: 100%;
-  background-position: 20% 35%;
+  background-position: 40% 35%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -144,30 +144,46 @@ span.icon-next {
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
+.block {
+  margin: 0;
+  padding: 25px 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
+
+.info-col {
+  padding: 0px 8px 5px; }
+  .info-col p {
+    border-bottom: 2px;
+    border-color: black;
+    border: solid 2px;
+    max-height: 141px;
+    min-height: 141px; }
+
 .info-container {
-  position: relative;
-  z-index: 1;
-  padding: 25px;
+  padding: 10px;
   display: block;
-  line-height: 25px;
+  line-height: 15px;
+  clear: both;
   width: 100%;
   text-align: center; }
   .info-container a {
     text-decoration: none; }
   .info-container h2 {
-    color: gray;
+    color: white;
     font-size: 100px;
-    margin: 0;
-    font-size: 100px;
-    margin-bottom: .3em; }
-  .info-container .info > .col-md-4 > h2:hover {
+    margin: 0; }
+  .info-container h2:hover {
     position: relative;
     color: orangered;
     bottom: 5px; }
   .info-container p {
+    line-height: 1.2em;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Yantramanav', sans-serif;
     margin: 0;
     margin-bottom: 1em;
-    padding: 5px; }
+    padding: 35px; }
 
 @media screen and (max-width: 380px) {
   #fitbg {
@@ -214,12 +230,11 @@ span.icon-next {
     margin-right: 100%; }
   0% {
     margin-right: 200%; } }
-@media (max-width: 360px) {
-  .quote h2 {
-    margin-top: 85%; } }
+@media (max-width: 375px) and (max-width: 480px) {
+  .quote {
+    clear: both; } }
 .quote {
-  margin-top: 5%;
-  height: auto;
+  clear: both;
   text-align: center;
   color: dimgray;
   font-family: 'Just Another Hand', cursive; }
@@ -234,7 +249,6 @@ span.icon-next {
     width: 100px; }
 
 #transform {
-  margin-top: 50px;
   max-height: 600px;
   height: auto;
   width: 100%; }
@@ -246,29 +260,38 @@ span.icon-next {
   height: auto; }
 
 #content {
+  max-width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
   height: auto;
-  text-align: center;
   width: 100%; }
   #content h2 {
     width: 100%;
-    margin-bottom: 0px;
     line-height: 1.35; }
+  #content h3 {
+    font-size: 20px;
+    padding-top: 15px;
+    margin-bottom: 10px; }
   #content p {
+    position: relative;
+    text-align: left;
+    left: 40%;
+    max-width: 400px;
+    font-size: 18px;
     line-height: 30px;
-    height: 45px;
-    background-color: rgba(0, 0, 0, 0.2); }
-  #content h2, #content p {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.2); }
+    height: 45px; }
+  #content h4 {
+    font-size: 25px;
+    padding-bottom: 35px; }
 
 #ytvid {
+  height: 850px;
   background-image: url(../img/vlogbg.jpg);
   background-size: cover;
   text-align: center;
   padding: 15px;
-  max-width: 100%;
-  height: auto;
-  min-height: 500px; }
+  max-width: 100%; }
   #ytvid iframe {
     border-style: solid;
     border-color: black;
@@ -277,30 +300,40 @@ span.icon-next {
     width: 100%;
     clear: right;
     margin-bottom: 15px; }
+  #ytvid h2 {
+    font-size: 3.5em;
+    margin-top: 10px;
+    padding-bottom: 40px; }
 
+@media only screen and (max-width: 360px) {
+  #foot {
+    max-height: 400px; } }
 #foot {
+  overflow-y: hidden;
   color: white;
+  text-align: center;
   height: 100%;
   margin: 0;
   width: 100%;
   background-image: url(../img/footer.png);
+  background-position: 50% 50%;
   background-size: cover; }
 
-.sitemap {
+#foot .sitemap {
   list-style-type: none; }
-  .sitemap ul {
+  #foot .sitemap ul {
     margin: 0;
     padding: 0;
     overflow: hidden; }
-    .sitemap ul li {
-      float: left; }
-      .sitemap ul li a {
-        text-align: center;
-        display: block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-        text-decoration-style: none; }
+  #foot .sitemap ul li {
+    float: left; }
+  #foot .sitemap ul li a {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none; }
 
 #footer-info {
   text-align: center;

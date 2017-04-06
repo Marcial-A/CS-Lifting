@@ -23,17 +23,50 @@ height: auto;
 
 /* Background images are set within the HTML using inline CSS, not here */
 .carousel-control {
-    height: 50%;
+    height: 40%;
 }
 .carousel-indicators {
-    
+    bottom: 40%;
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
+    #quote-container.container {
+        padding-top: 85%;
+        min-height: 850px;
+        
+    }
+    #quote-container #transform {
+        padding-bottom: 25px;
+        padding-left: 10px;
+    }
+    #ytvid iframe{
+        max-height: 230px;
+    }
+    #content p {
+        position: static;
+    }
+    .info-col {
+        min-height: 240px;
+    }
+    .info-col p {
+        min-height: 240px;
+    }
+    #logo {
+        position: relative;
+        bottom: 20%;
+    }
+    .navbar-brand {
+        position: relative;
+        bottom: 50%;
+    }
+    #nav-collapse {
+        position: relative;
+        top: 20%;
+    }
     .carousel-control {
-        height: 25%;
+        height: 35%;
     }
     .carousel-indicators {
-        bottom: 70%;
+        bottom: 77%;
     }
     .carousel-inner {
     height: 100%;
