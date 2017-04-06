@@ -260,11 +260,13 @@ span.icon-next {
   height: auto; }
 
 #content {
+  position: relative;
+  color: black;
   max-width: 100%;
   position: relative;
   left: 0;
   right: 0;
-  height: auto;
+  min-height: 250px;
   width: 100%; }
   #content h2 {
     width: 100%;
@@ -281,12 +283,19 @@ span.icon-next {
     font-size: 18px;
     line-height: 30px;
     height: 45px; }
+  #content h3 {
+    position: relative;
+    left: 45%;
+    padding-bottom: 25px; }
+  #content h4 {
+    position: relative;
+    left: 40%; }
   #content h4 {
     font-size: 25px;
     padding-bottom: 35px; }
 
 #ytvid {
-  height: 850px;
+  height: 550px;
   background-image: url(../img/vlogbg.jpg);
   background-size: cover;
   text-align: center;
@@ -303,7 +312,7 @@ span.icon-next {
   #ytvid h2 {
     font-size: 3.5em;
     margin-top: 10px;
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
 
 @media only screen and (max-width: 360px) {
   #foot {

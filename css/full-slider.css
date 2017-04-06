@@ -41,6 +41,17 @@ height: auto;
     #ytvid iframe{
         max-height: 230px;
     }
+    #content {
+        min-height: 300px;
+    }
+    #content h3 {
+        position: relative;
+        left: 30%;
+    }
+    #content h4 {
+        position: relative;
+        left: 10%;
+    }
     #content p {
         position: static;
     }

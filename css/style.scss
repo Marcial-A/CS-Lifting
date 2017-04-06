@@ -338,16 +338,19 @@ span.icon-next {
 
 }
 #content {
+    position: relative;
+    color: black;
     max-width: 100%;
     position: relative;
     left: 0;
     right: 0;
-    height: auto;
+    min-height: 250px;
+    
     
    width: 100%;
-    
+   
     h2 {
-       
+        
         width: 100%;
        
         line-height: 1.35;
@@ -367,6 +370,15 @@ span.icon-next {
         height: 45px;
        
     }
+    h3 {
+        position: relative;
+        left: 45%;
+        padding-bottom: 25px;
+    }
+     h4 {
+        position: relative;
+       left: 40%;
+    }
     h4{
         font-size: 25px;
         padding-bottom: 35px;
@@ -378,7 +390,7 @@ span.icon-next {
     }
 }
 #ytvid {
-    height: 850px;
+    height: 550px;
     background-image: url(../img/vlogbg.jpg);
     background-size: cover;
     text-align: center;
@@ -400,7 +412,7 @@ span.icon-next {
     h2 {
         font-size: 3.5em;
         margin-top: 10px;
-         padding-bottom: 40px;
+         padding-bottom: 20px;
     }
     }
 ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
