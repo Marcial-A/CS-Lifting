@@ -29,6 +29,24 @@ height: auto;
     bottom: 40%;
 }
 @media (max-width: 375px) {
+    .navbar #brandname {
+        width: 50px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    #nav ul li a {
+        padding: 15px;
+    }
+    .carousel-control {
+    
+    }
+    .item h2{
+        font-size: 24px;
+    }
+    .item p {
+        font-size: 14px;
+    }
     .info-container p{
        max-width: 640px;
         margin-left: 2px;
