@@ -63,21 +63,50 @@
     width: 100%;
     font-family: 'Acme', sans-serif;
     color: white; }
-  .navbar #fb {
+  .navbar .fb {
     font-size: 18px; }
-  .navbar #fb:hover {
+  .navbar .fb:hover {
     color: #3b5998;
     background-color: white; }
-  .navbar #ig {
+  .navbar .ig {
     font-size: 18px; }
-  .navbar #ig:hover {
+  .navbar .ig:hover {
     color: #8a3ab9;
     background-color: white; }
-  .navbar #yt {
+  .navbar .yt {
     font-size: 18px; }
-  .navbar #yt:hover {
+  .navbar .yt:hover {
     color: #bb0000;
     background-color: white; }
+
+ul li a {
+  padding: 7px; }
+
+#brandname {
+  width: 100%;
+  font-family: 'Acme', sans-serif;
+  color: white; }
+
+.fb {
+  font-size: 18px; }
+
+.fb:hover {
+  color: #3b5998;
+  background-color: white; }
+
+.ig {
+  font-size: 18px; }
+
+.ig:hover {
+  color: #8a3ab9;
+  background-color: white; }
+
+.yt {
+  font-size: 18px; }
+
+.yt:hover {
+  color: #bb0000;
+  background-color: white; }
 
 /* Background images are set within the HTML using inline CSS, not here */
 .fill {
@@ -151,7 +180,7 @@ span.icon-next {
   color: white; }
 
 .info-col {
-  padding: 0px 8px 5px; }
+  max-width: 100%; }
   .info-col p {
     border-bottom: 2px;
     border-color: black;
@@ -269,7 +298,6 @@ span.icon-next {
   min-height: 250px;
   width: 100%; }
   #content h2 {
-    width: 100%;
     line-height: 1.35; }
   #content h3 {
     font-size: 20px;
@@ -284,15 +312,8 @@ span.icon-next {
     line-height: 30px;
     height: 45px; }
   #content h3 {
-    position: relative;
-    left: 45%;
+    text-align: center;
     padding-bottom: 25px; }
-  #content h4 {
-    position: relative;
-    left: 40%; }
-  #content h4 {
-    font-size: 25px;
-    padding-bottom: 35px; }
 
 #ytvid {
   height: 550px;
@@ -318,6 +339,7 @@ span.icon-next {
   #foot {
     max-height: 400px; } }
 #foot {
+  max-height: 400px;
   overflow-y: hidden;
   color: white;
   text-align: center;
@@ -327,8 +349,15 @@ span.icon-next {
   background-image: url(../img/footer.png);
   background-position: 50% 50%;
   background-size: cover; }
+  #foot #sitemap {
+    padding-bottom: 20px; }
+  #foot p {
+    padding-bottom: 15px; }
 
 #foot .sitemap {
+  display: flex;
+  position: relative;
+  left: 41%;
   list-style-type: none; }
   #foot .sitemap ul {
     margin: 0;
@@ -336,6 +365,8 @@ span.icon-next {
     overflow: hidden; }
   #foot .sitemap ul li {
     float: left; }
+  #foot .sitemap a {
+    padding: 5px; }
   #foot .sitemap ul li a {
     text-align: center;
     display: block;
@@ -346,8 +377,11 @@ span.icon-next {
 
 #footer-info {
   text-align: center;
-  display: block;
-  list-style: none; }
+  display: flex;
+  position: relative;
+  left: 45%;
+  list-style: none;
+  padding-bottom: 120px; }
 
 #copyrights {
   clear: both;

@@ -53,6 +53,7 @@
     
 }
 #nav {
+    
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -87,29 +88,58 @@
         font-family: 'Acme', sans-serif;
         color: white;
     }
-    #fb {
+    .fb {
         font-size: 18px;
     }
-    #fb:hover {
+    .fb:hover {
         color: #3b5998;
         background-color: white;
 }
-    #ig {
+    .ig {
         font-size: 18px;
     }
-    #ig:hover {
+    .ig:hover {
         color: #8a3ab9;
         background-color: white;
     }
-    #yt {
+    .yt {
         font-size: 18px;
     }
-    #yt:hover {
+    .yt:hover {
         color: #bb0000;
         background-color: white;
     }
 }
-
+ ul li a {
+        padding: 7px;
+    }
+    
+    #brandname{
+       width: 100%;
+        font-family: 'Acme', sans-serif;
+        color: white;
+    }
+    .fb {
+        font-size: 18px;
+    }
+    .fb:hover {
+        color: #3b5998;
+        background-color: white;
+}
+    .ig {
+        font-size: 18px;
+    }
+    .ig:hover {
+        color: #8a3ab9;
+        background-color: white;
+    }
+    .yt {
+        font-size: 18px;
+    }
+    .yt:hover {
+        color: #bb0000;
+        background-color: white;
+    }
 
 /* Background images are set within the HTML using inline CSS, not here */
 
@@ -193,7 +223,7 @@ span.icon-next {
     color: white;
 }
 .info-col {
-    padding: 0px 8px 5px;
+    max-width: 100%;
     p {
         border-bottom: 2px;
         border-color: black;
@@ -351,7 +381,7 @@ span.icon-next {
    
     h2 {
         
-        width: 100%;
+       
        
         line-height: 1.35;
     }
@@ -371,17 +401,8 @@ span.icon-next {
        
     }
     h3 {
-        position: relative;
-        left: 45%;
+      text-align: center;
         padding-bottom: 25px;
-    }
-     h4 {
-        position: relative;
-       left: 40%;
-    }
-    h4{
-        font-size: 25px;
-        padding-bottom: 35px;
     }
     h2, p{
         
@@ -425,6 +446,7 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
 }
 
 #foot {
+    max-height: 400px;
     overflow-y: hidden;
     color: white;
  text-align: center;
@@ -434,8 +456,17 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
     background-image: url(../img/footer.png);
     background-position: 50% 50%;
     background-size: cover;
+    #sitemap {
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 15px;
+    }
 }
 #foot .sitemap {
+    display: flex;
+    position: relative;
+    left: 41%;
 	list-style-type: none;
 	ul {
 		margin: 0;
@@ -447,7 +478,11 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
 			
 			
 			}
+    a {
+        padding: 5px;
+    }
         ul li a {
+           
                 text-align: center;
 				display: block;
 				padding: 15px;
@@ -459,11 +494,14 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
 		
 	
 }
+
 #footer-info {
     text-align: center;
-    display: block;
-    
+    display: flex;
+    position: relative;
+    left: 45%;
     list-style: none;
+    padding-bottom: 120px;
     
 }
 #copyrights {
