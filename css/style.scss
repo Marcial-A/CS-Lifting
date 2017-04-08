@@ -23,7 +23,7 @@
     background-color:crimson;
 }
 #nav-collapse {
-   
+   clear: right;
     margin-top: 10px;
     background-color: rgba(0, 0, 0, .8);
 }
@@ -447,7 +447,7 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
 
 #foot {
     max-height: 400px;
-    overflow-y: hidden;
+  
     color: white;
  text-align: center;
     height: 100%;
@@ -457,7 +457,7 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
     background-position: 50% 50%;
     background-size: cover;
     #sitemap {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     p {
         padding-bottom: 15px;
@@ -474,7 +474,7 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
 		overflow: hidden;
         }
     ul li {
-			float: left;
+			
 			
 			
 			}
@@ -530,7 +530,12 @@ ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible {
         width: 300px;
     }
 }
-#equipment-wrapper {
-         float: left;
-        clear: left;
-    }
+#equip-con {
+    padding-top: 40px;
+}
+#body {
+    height: 500px;
+    position: relative;
+    left: 350px;
+   
+}

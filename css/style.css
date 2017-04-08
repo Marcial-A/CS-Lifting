@@ -19,6 +19,7 @@
   background-color: crimson; }
 
 #nav-collapse {
+  clear: right;
   margin-top: 10px;
   background-color: rgba(0, 0, 0, 0.8); }
 
@@ -339,7 +340,6 @@ span.icon-next {
     max-height: 400px; } }
 #foot {
   max-height: 400px;
-  overflow-y: hidden;
   color: white;
   text-align: center;
   height: 100%;
@@ -349,7 +349,7 @@ span.icon-next {
   background-position: 50% 50%;
   background-size: cover; }
   #foot #sitemap {
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
   #foot p {
     padding-bottom: 15px; }
 
@@ -362,8 +362,6 @@ span.icon-next {
     margin: 0;
     padding: 0;
     overflow: hidden; }
-  #foot .sitemap ul li {
-    float: left; }
   #foot .sitemap a {
     padding: 5px; }
   #foot .sitemap ul li a {
@@ -402,8 +400,12 @@ span.icon-next {
   #equipment-container #barbell {
     width: 300px; }
 
-#equipment-wrapper {
-  float: left;
-  clear: left; }
+#equip-con {
+  padding-top: 40px; }
+
+#body {
+  height: 500px;
+  position: relative;
+  left: 350px; }
 
 /*# sourceMappingURL=style.css.map */
