@@ -153,6 +153,13 @@ span.icon-next {
     font-size: 18px;
     font-family: 'Acme', sans-serif; }
 
+.about h2, .about p {
+  color: white;
+  font-family: 'Acme', sans-serif; }
+.about p {
+  font-size: 18px;
+  color: white; }
+
 @keyframes moveDown {
   0% {
     bottom: 48.5%; }
@@ -407,5 +414,40 @@ span.icon-next {
   height: 500px;
   position: relative;
   left: 350px; }
+
+area#neck:hover {
+  background-color: red; }
+
+.about {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  background-image: url(../img/team.png);
+  background-position: 70% 65%;
+  background-size: cover;
+  min-height: 400px;
+  color: black;
+  width: 100%; }
+  .about h2 {
+    margin-top: 10%; }
+
+#about-header {
+  font-size: 40px;
+  padding-left: 15%;
+  padding-top: 2%;
+  font-family: 'Acme', sans-serif; }
+
+.about-wrapper h2, .about-wrapper p {
+  font-family: 'Acme', sans-serif; }
+.about-wrapper p {
+  font-size: 18px; }
+
+.about-wrapper img {
+  margin-top: 20%; }
+
+.about-content p {
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 15%;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
